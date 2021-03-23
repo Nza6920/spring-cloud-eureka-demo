@@ -37,7 +37,7 @@ public class ClientBRestTemplateClient {
 
         // 使用网关传递
         ResponseEntity<Map> exchange = restTemplate.exchange(uri, HttpMethod.GET, null, Map.class);
-        
+
         return exchange.getBody();
     }
 }
